@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Rock, paper and scissor game</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class='bg-light d-flex flex-column justify-content-center align-items-center min-vh-100'>
+  <div class="container">
+    <h1 class='text-center text-decoration-underline text-uppercase fs-2 fs-md-1'>Rock, paper & Scissors game</h1>
+    <h2 class='my-3 my-md-5 fs-4 fs-md-3 text-center'>Try your luck against the computer</h2>
+    <div class="row justify-content-center g-3">
+      <div id='scissors' class='col-6 col-md-4 text-center'>
+        <img src="https://img.freepik.com/free-vector/golden-scissors-isolated_1284-41795.jpg?w=740&t=st=1728665576~exp=1728666176~hmac=05c7fd587561a84c1ba556035be9f6ab61d33289be88db10d0a0eff8abb19652" 
+             alt="scissors" 
+             class="img-fluid border border-dark pulse rounded" 
+             style="width: 100%; max-width: 150px; height: auto; aspect-ratio: 1; object-fit: cover; cursor: pointer;">
+      </div>
+      <div id='rock' class='col-6 col-md-4 text-center'>
+        <img src="https://img.freepik.com/free-psd/rocks-stones-isolated_23-2151445123.jpg?t=st=1728664789~exp=1728668389~hmac=1adec94c29d62a4a55c19f03e011bd07eeeab9dd56b37d46c85c0b5cb96174b7&w=1050" 
+             alt="rock" 
+             class="img-fluid border border-dark pulse rounded" 
+             style="width: 100%; max-width: 150px; height: auto; aspect-ratio: 1; object-fit: cover; cursor: pointer;">
+      </div>
+      <div id='paper' class='col-6 col-md-4 text-center'>
+        <img src="https://img.freepik.com/premium-photo/piece-paper-with-white-sheet-that-says-word-it_1089669-23000.jpg?w=250" 
+             alt="paper" 
+             class="img-fluid border border-dark pulse rounded" 
+             style="width: 100%; max-width: 150px; height: auto; aspect-ratio: 1; object-fit: cover; cursor: pointer;">
+      </div>
+    </div>
+    <div class='my-3'>
+      <p class="fs-5">You chose: <span id='playerChoice' class='text-success fw-bold ms-2 fs-4'></span></p>
+      <p class="fs-5">The computer chose: <span id='pcChoice' class='text-primary fw-bold ms-2 fs-4'></span></p>
+      <p class='text-center fw-bold fs-5'>Result: <span id='winner' class='ms-2 bg-info fst-italic fs-3 rounded'></span></p>
+      <p id='counter' class='text-center'></p>
+    </div>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
