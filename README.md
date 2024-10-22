@@ -2,7 +2,7 @@
 
 This is a simple Rock-Paper-Scissors game implemented in HTML, CSS, and JavaScript. The user can play against the computer, which randomly selects one of the three options.
 
-A Pen created on CodePen.io. Original URL: [https://codepen.io/Cema2019/pen/ZEgLORa](https://codepen.io/Cema2019/pen/ZEgLORa).
+Play the game online at https://cema2019.github.io/Rock-paper-scissor-game-v2/
 
 ## Features
 
