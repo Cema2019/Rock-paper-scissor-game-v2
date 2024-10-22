@@ -5,7 +5,7 @@ const selectRandom = () => {
   return icons[randomIndex];
 };
 
-let count = localStorage.getItem('clickcount') ? Number(localStorage.getItem('clickcount')) : 0;
+let count = localStorage.getItem('winCount') ? Number(localStorage.getItem('winCount')) : 0;
 
 // Function to determine the winner
 const determineWinner = (playerChoice, pcChoice) => {
@@ -23,15 +23,15 @@ const determineWinner = (playerChoice, pcChoice) => {
     count = 0;
   }
 
-  localStorage.setItem('clickcount', count);
+  localStorage.setItem('winCount', count);
   
   return result;
 };
 
 // Function to keep the user wins total when the browser refreshes
 function displayCounter() {
-  if (localStorage.getItem('clickcount')) {
-    document.getElementById('counter').textContent = `Wins: ${localStorage.getItem('clickcount')}`;
+  if (localStorage.getItem('winCount')) {
+    document.getElementById('counter').textContent = `Wins: ${localStorage.getItem('winCount')}`;
   } else {
     document.getElementById('counter').textContent = 0;
   }
@@ -44,7 +44,7 @@ const handlePlayerChoice = (playerChoice) => {
   document.getElementById('playerChoice').textContent = playerChoice;
   document.getElementById('pcChoice').textContent = pcChoice;
   document.getElementById('winner').textContent = determineWinner(playerChoice, pcChoice);
-  document.getElementById('counter').textContent = `Wins: ${localStorage.getItem('clickcount')}`;
+  document.getElementById('counter').textContent = `Wins: ${localStorage.getItem('winCount')}`;
 };
 
 // Attach event listeners directly to the elements with id
