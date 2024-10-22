@@ -2,7 +2,7 @@
 
 This is a simple Rock-Paper-Scissors game implemented in HTML, CSS, and JavaScript. The user can play against the computer, which randomly selects one of the three options.
 
-Play the game online at https://cema2019.github.io/Rock-paper-scissor-game-v2/
+Play the game online: <a href="https://cema2019.github.io/Rock-paper-scissor-game-v2/" target="_blank">Rock, Paper & Scissors</a>
 
 ## Features
 
